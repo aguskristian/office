@@ -25,17 +25,17 @@ class User extends CI_Controller {
 		$this->load->model('user_model','', TRUE);
 		
 		# user restriction
-		if ( ! $this->session->userdata('logged_in'))
-    	{ 
+		#if ( ! $this->session->userdata('logged_in'))
+    	#{ 
         	# function allowed for access without login
-			$allowed = array('index', 'login', 'do_login', 'verification', 'pin_verification', 'do_pin_verification', 'registration', 'do_registration', 'select_unit');
+			#$allowed = array('index', 'login', 'do_login', 'verification', 'pin_verification', 'do_pin_verification', 'registration', 'do_registration', 'select_unit');
         
 			# other function need login
-			if (! in_array($this->router->method, $allowed)) 
-			{
-    			redirect('user/login');
-			}
-   		 }
+			#if (! in_array($this->router->method, $allowed)) 
+			#{
+    		#	redirect('user/login');
+			#}
+   		 #}
     }
 # constuction ------------------------------	
 
@@ -43,6 +43,7 @@ class User extends CI_Controller {
 	public function index()
 	{
 		#redirect('user/login');
+		$this->load->view('dashboard');
 	}
 # index ------------------------------------	
 	
@@ -629,6 +630,26 @@ class User extends CI_Controller {
 		
 	}
 # level manager --------------------------
+
+# level admin ----------------------------
+	public function install_db_session()
+	{
+		# call models to save data
+		$this->user_model->create_db_session();
+	}
+	
+	public function install_db_user_identity()
+	{
+		# call models to save data
+		$this->user_model->create_db_user_identity();
+	}
+	
+	public function install_db_user_verification()
+	{
+		# call models to save data
+		$this->user_model->create_db_user_verification();
+	}
+# level admin ----------------------------
 	
 }
 
