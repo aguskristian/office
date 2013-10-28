@@ -1,10 +1,10 @@
-<?php $this->load->view ('template_admin/admin_logo')?>
+<?php #$this->load->view ('template_admin/admin_logo')?>
 	
-<?php $this->load->view ('template_admin/admin_header')?>			
+<?php #$this->load->view ('template_admin/admin_header')?>			
 			
 		<div class="container_12" style="overflow-x: scroll;">
 				
-		<?php $this->load->view('template_admin/admin_navigation_user_level')?>
+		<?php #$this->load->view('template_admin/admin_navigation_user_level')?>
 			
 		<div class="content">
 		
@@ -48,7 +48,7 @@
 			</form>		
 		</div>
 </div>
-	<?php $this->load->view('template_admin/admin_footer')?>
+	<?php #$this->load->view('template_admin/admin_footer')?>
 </body>
 
 <!-- Mirrored from www.portnine.com/contact by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 03 Jul 2013 09:27:00 GMT -->

@@ -1,10 +1,10 @@
-<?php $this->load->view ('template_admin/admin_logo')?>
+<?php #$this->load->view ('template_admin/admin_logo')?>
 
-<?php $this->load->view ('template_admin/admin_header')?>			
+<?php #$this->load->view ('template_admin/admin_header')?>			
 
 	<div class="container_12">
 
-	<?php $this->load->view('template_admin/admin_navigation_user_level')?>
+	<?php #$this->load->view('template_admin/admin_navigation_user_level')?>
 
 	<div class="content">
 
@@ -62,7 +62,7 @@
 			<?php form_close(); ?>
 		   
 	<div class="clear"></div>
-		<?php $this->load->view ('footer')?>
+		<?php #$this->load->view ('footer')?>
             
             
 

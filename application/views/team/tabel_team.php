@@ -1,10 +1,10 @@
-<?php $this->load->view ('template_admin/admin_logo')?>
+<?php #$this->load->view ('template_admin/admin_logo')?>
 
-<?php $this->load->view ('template_admin/admin_header')?>			
+<?php #$this->load->view ('template_admin/admin_header')?>			
 				
 		<div class="container_12" style="overflow-x: scroll;">
 				
-		<?php $this->load->view('template_admin/admin_navigation_user_level')?>
+		<?php #$this->load->view('template_admin/admin_navigation_user_level')?>
 				
 		<div class="grid_12">
 				
@@ -72,5 +72,5 @@
                 <?php endforeach; ?>
  
             </table>
-		<?php $this->load->view ('template_admin/admin_footer')?>
+		<?php #$this->load->view ('template_admin/admin_footer')?>
 		</div>

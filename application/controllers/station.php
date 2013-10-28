@@ -7,7 +7,7 @@
     		{
 				parent::__construct();
 					#memanggil fungsi ion auth 
-					$this->load->library ( array( 'Ion_auth','form_validation','session' ));
+					#$this->load->library ( array( 'Ion_auth','form_validation','session' ));
 					#memanggil helper 'form','array'
 					$this->load->helper(array('form', 'url'));
 					#memanggil Models 'user_level'					
