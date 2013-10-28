@@ -632,6 +632,11 @@ class User extends CI_Controller {
 # level manager --------------------------
 
 # level admin ----------------------------
+	public function install()
+	{
+		$this->load->view('dashboard_admin');	
+	}
+	
 	public function install_db_session()
 	{
 		# call models to save data
