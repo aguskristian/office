@@ -634,7 +634,7 @@ class User extends CI_Controller {
 # level admin ----------------------------
 	public function install()
 	{
-		$this->load->view('dashboard_admin');	
+		$this->load->view('install_home');	
 	}
 	
 	public function install_db_session()
