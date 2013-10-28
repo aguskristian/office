@@ -44,9 +44,30 @@ class User extends CI_Controller {
 	{
 		#redirect('user/login');
 		$this->load->view('dashboard');
+		
 	}
 # index ------------------------------------	
-	
+public function step_instalation()
+	{
+		#redirect('user/login');
+		$this->load->view('cssjs');
+		$this->load->view('step1');
+		
+	}
+public function step_on_progress()
+	{
+		#redirect('user/login');
+		$this->load->view('cssjs');
+		$this->load->view('step2');
+		
+	}
+public function finish_instalation()
+	{
+		#redirect('user/login');
+		$this->load->view('cssjs');
+		$this->load->view('step3');
+		
+	}
 # login ------------------------------------
 	public function login()
 	{
@@ -634,25 +655,33 @@ class User extends CI_Controller {
 # level admin ----------------------------
 	public function install()
 	{
-		$this->load->view('install_home');	
+		$this->load->view('cssjs');
+		$this->load->view('install_home');
+		
 	}
 	
 	public function install_db_session()
 	{
 		# call models to save data
+		$this->load->view('cssjs');
+		$this->load->view('create_db_session');
 		$this->user_model->create_db_session();
 	}
 	
 	public function install_db_user_identity()
 	{
 		# call models to save data
+		$this->load->view('cssjs');
 		$this->user_model->create_db_user_identity();
+		$this->load->view('create_db_user_identity');
 	}
 	
 	public function install_db_user_verification()
 	{
 		# call models to save data
+		$this->load->view('cssjs');
 		$this->user_model->create_db_user_verification();
+		$this->load->view('create_db_user_verification');
 	}
 # level admin ----------------------------
 	
