@@ -1,43 +1,9 @@
-<?php #$this->load->view ('template_admin/admin_logo')?>
-
-<?php #$this->load->view ('template_admin/admin_header')?>			
-				
-		<div class="container_12" style="overflow-x: scroll;">
-				
-		<?php #$this->load->view('template_admin/admin_navigation_user_level')?>
+		<?php $this->load->view('user/cssjs')?>
 				
 		<div class="grid_12">
-				
-		<h2 class="page-title">Tabel Function<span class="breadcrumbs">
-				
-		<a href="<?php echo base_url()?>index.php/functionn/add_function">Form Function</a> &rsaquo; Tabel Function</span></h2></div>
-				
-		<table align="center"   style="font-size:12px" class="table ">
-		
-			<div>
-			<strong>
-			
-				<?php 
-				
-					$search = $this->input->post( 'search' );
-					
-					echo $search ? "Menampilkan data pencarian '$search'" : 'Pencarian Data';
-					
-				?>
-				
-			</strong>
-			</div>
-     
-                <form action="<?php echo site_url() ?>/functionn/tabel_function" method="post" class="navbar-search pull-left">
-					
-					<input type="search" name="search" class="input-medium search-query" placeholder="search" value="<?php echo $this->input->post( 'search' ) ?>" />
-					
-					
-					<button class="btn" type="button">Search</button>
-				
-                </form>
-				
-			<br></br>
+		<a href="<?php echo base_url()?>index.php/functionn/add_function">Form Function</a> &rsaquo; Tabel Function</span></h2>
+		</div>
+
     		<table align="center" border="1" cellpadding="0" cellspacing="0" style="font-size:12px" class="table table-bordered">
 
                 <tr align="center" bgcolor="#CCCCCC">
@@ -70,5 +36,4 @@
                 <?php endforeach; ?>
  
             </table>
-		<?php #$this->load->view ('template_admin/admin_footer')?>
 		</div>

@@ -1,43 +1,9 @@
-<?php #$this->load->view ('template_admin/admin_logo')?>
-
-<?php #$this->load->view ('template_admin/admin_header')?>			
+	<?php $this->load->view('user/cssjs')?>
 				
-		<div class="container_12" style="overflow-x: scroll;">
-				
-		<?php #$this->load->view('template_admin/admin_navigation_user_level')?>
-				
-		<div class="grid_12">
-				
-		<h2 class="page-title">Tabel Team<span class="breadcrumbs">
-				
-		<a href="<?php echo base_url()?>index.php/team/add_team">Form Team</a> &rsaquo; Tabel Team</span></h2></div>
-				
+		<div class="grid_12">		
+		<a href="<?php echo base_url()?>index.php/team/add_team">Form Team</a> &rsaquo; Tabel Team</span></h2></div>	
 		<table align="center"   style="font-size:12px" class="table ">
-		
-			<div>
-			<strong>
-			
-				<?php 
-				
-					$search = $this->input->post( 'search' );
-					
-					echo $search ? "Menampilkan data pencarian '$search'" : 'Pencarian Data';
-					
-				?>
-				
-			</strong>
-			</div>
-     
-                <form action="<?php echo site_url() ?>/team/tabel_team" method="post" class="navbar-search pull-left">
-					
-					<input type="search" name="search" class="input-medium search-query" placeholder="search" value="<?php echo $this->input->post( 'search' ) ?>" />
-					
-					
-					<button class="btn" type="button">Search</button>
-				
-                </form>
-				
-			<br></br>
+		 
     		<table align="center" border="1" cellpadding="0" cellspacing="0" style="font-size:12px" class="table table-bordered">
 
                 <tr align="center" bgcolor="#CCCCCC">
@@ -72,5 +38,4 @@
                 <?php endforeach; ?>
  
             </table>
-		<?php #$this->load->view ('template_admin/admin_footer')?>
 		</div>

@@ -1,22 +1,18 @@
-	
-	
-	<?php #$this->load->view ('template_admin/admin_logo')?>
-	
-	<?php #$this->load->view ('template_admin/admin_header')?>
-	
-		<div class="container_12" style="overflow-x: scroll;">
-				
-		<?php #$this->load->view('template_admin/admin_navigation_user_level')?>
-		
-		
-		<div class="content">
-		
-		<div class="container_12">
+		<?php $this->load->view('user/cssjs')?>
 			
-		<h2 class="page-title">Form Station<span class="breadcrumbs">
-			
+		<div align="left">
+			<ul>	
+				<a href="<?php echo base_url ()?>index.php/station/add_station"</a>Station |
+				<a href="<?php echo base_url ()?>index.php/unit/add_unit"</a>Unit |
+				<a href="<?php echo base_url ()?>index.php/sub_unit/add_sub_unit"</a>Sub Unit |
+				<a href="<?php echo base_url ()?>index.php/team/add_team"</a>Team |
+				<a href="<?php echo base_url ()?>index.php/functionn/add_function"</a>Function |
+			</ul>
+		</div>
+
+		
+		<div class="container_12">	
 		<a href="<?php echo base_url()?>index.php/station/tabel_station">Tabel station</a> &rsaquo; Form station</span></h2>
-		
 		</div>
 
 		<div class="grid_4">
@@ -46,8 +42,6 @@
 			
 		</div>
 	</div>
-	
-<?php #$this->load->view('template_admin/admin_footer')?>
 </body>
 
 

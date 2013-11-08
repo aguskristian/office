@@ -10,7 +10,7 @@
 
 	<div class="container_12">
 
-	<h2 class="page-title">Form Position<span class="breadcrumbs">
+	
 
 	<a href="<?php echo base_url()?>index.php/position/tabel_position">Tabel Position</a> &rsaquo; Form Position</span></h2>
 

@@ -1,43 +1,19 @@
-<?php #$this->load->view ('template_admin/admin_logo')?>
 
-<?php #$this->load->view ('template_admin/admin_header')?>			
-				
-		<div class="container_12" style="overflow-x: scroll;">
-				
-		<?php #$this->load->view('template_admin/admin_navigation_user_level')?>
-				
+		<?php $this->load->view('user/cssjs')?>
+		
+		<div align="left">
+			<ul>	
+				<a href="<?php echo base_url ()?>index.php/station/add_station"</a>Station |
+				<a href="<?php echo base_url ()?>index.php/unit/add_unit"</a>Unit |
+				<a href="<?php echo base_url ()?>index.php/sub_unit/add_sub_unit"</a>Sub Unit |
+				<a href="<?php echo base_url ()?>index.php/team/add_team"</a>Team |
+				<a href="<?php echo base_url ()?>index.php/functionn/add_function"</a>Function |
+			</ul>
+		</div>		
 		<div class="grid_12">
-				
-		<h2 class="page-title">Tabel Position<span class="breadcrumbs">
-				
+	
 		<a href="<?php echo base_url()?>index.php/position/add_position">Form Position</a> &rsaquo; Tabel Position</span></h2></div>
 				
-		<table align="center"   style="font-size:12px" class="table ">
-		
-			<div>
-			<strong>
-			
-				<?php 
-				
-					$search = $this->input->post( 'search' );
-					
-					echo $search ? "Menampilkan data pencarian '$search'" : 'Pencarian Data';
-					
-				?>
-				
-			</strong>
-			</div>
-     
-                <form action="<?php echo site_url() ?>/position/tabel_position" method="post" class="navbar-search pull-left">
-					
-					<input type="search" name="search" class="input-medium search-query" placeholder="search" value="<?php echo $this->input->post( 'search' ) ?>" />
-					
-					
-					<button class="btn" type="button">Search</button>
-				
-                </form>
-				
-			<br></br>
     		<table align="center" border="1" cellpadding="0" cellspacing="0" style="font-size:12px" class="table table-bordered">
 
                 <tr align="center" bgcolor="#CCCCCC">

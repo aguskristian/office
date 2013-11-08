@@ -1,41 +1,10 @@
-<?php #$this->load->view ('template_admin/admin_logo')?>
-
-<?php #$this->load->view ('template_admin/admin_header')?>			
-				
-		<div class="container_12" style="overflow-x: scroll;">
-				
-		<?php #$this->load->view('template_admin/admin_navigation_user_level')?>
-				
-		<div class="grid_12">
-				
-		<h2 class="page-title">Tabel Station<span class="breadcrumbs">
-				
+		
+		<?php $this->load->view('user/cssjs')?>
+		
 		<a href="<?php echo base_url()?>index.php/station/add_station">Form Station</a> &rsaquo; Tabel Station</span></h2></div>
 				
 		<table align="center"   style="font-size:12px" class="table ">
-			<div>
-			<strong>
 			
-				<?php 
-				
-					$search = $this->input->post( 'search' );
-					
-					echo $search ? "Menampilkan data pencarian '$search'" : 'Pencarian Data';
-					
-				?>
-				
-			</strong>
-			</div>
-     
-                <form action="<?php echo site_url() ?>/station/tabel_station" method="post" class="navbar-search pull-left">
-					
-					<input type="search" name="search" class="input-medium search-query" placeholder="search" value="<?php echo $this->input->post( 'search' ) ?>" />
-					
-					
-					<button class="btn" type="button">Search</button>
-				
-                </form>
-    		
 				<br></br>
                 <tr align="center" bgcolor="#CCCCCC">
 				
